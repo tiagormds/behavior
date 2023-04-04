@@ -91,4 +91,10 @@ class UserController extends Controller
     {
         //
     }
+
+    public function userComments($id, $comment=null)
+    {
+        echo "Controller: User Método: userComments";
+        var_dump($id, $comment);
+    }
 }

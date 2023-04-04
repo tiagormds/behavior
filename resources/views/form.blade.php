@@ -13,8 +13,9 @@
 
 <div class="container my-5">
 
-    <form action="{{ route('postData') }}" method="post">
+    <form action="{{ route('putData') }}" method="post">
         @csrf
+        @method('PUT')
 
         <div class="mb-3">
             <label for="first_name">Primeiro Nome:</label>
